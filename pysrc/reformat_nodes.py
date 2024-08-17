@@ -12,7 +12,11 @@ def main():
 
     nodelist = []
     for feature in input_json['features']:
-        ruggedized = random.choice([0, 1])
+
+        # fewer rugged nodes
+        ruggedized = 0
+        if random.random() > 0.6:
+            ruggedized = 1
 
         node = {
             "type": "Feature",

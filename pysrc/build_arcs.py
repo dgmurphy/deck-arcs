@@ -6,6 +6,8 @@ def main():
     NODES_FILE = "public/nodes.geojson"
     RUGGEDIZED_COLOR = [50, 180, 50, 180]
     STANDARD_COLOR = [90, 90, 255, 180]
+    NETWORKS = ["AlphaNet", "BravoNet", "CharlieNet", "DeltaNet"]
+    WAVEBANDS = ["AHF", "BHF", "CHF", "DHF", "FHF"]
 
     with open(NODES_FILE, 'r') as f:
         input_json = json.load(f)
@@ -52,8 +54,10 @@ def main():
             "targetPosition": dest_node["geometry"]["coordinates"],
             "sourceColor": src_color,
             "targetColor": dest_color,
-            "numpaths": random.randint(1, 7),
-            "ruggedPath": rugged_path
+            "numPaths": random.randint(1, 7),
+            "ruggedPath": rugged_path,
+            "network": random.choice(NETWORKS),
+            "waveband": random.choice(WAVEBANDS)
         }
         arc_list.append(arc)
 
