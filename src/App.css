@@ -1,0 +1,44 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+#control-panel {
+	position: fixed;
+	z-index: 9;
+	top: 0;
+  	bottom: 0;
+	right: 0;
+  	overflow-x: hidden;
+  	overflow-y: auto;
+  	height: 100%;
+  	width: 330px;
+  	background: rgba(245, 248, 250, 0.85);
+}
+
+
+.hrule {
+	width: 90%;
+    margin: 0 auto 0 auto;
+}
+
+.layer-controls {
+	padding: 8px 0;
+}
+
+.slider-control {
+	
+  height: 220px;
+  margin: 0 auto 0 auto;
+  width:275px;
+  padding-top: 10px;
+}
+
+.sliders-row {
+	margin-left:20px;
+}
+
+
+
