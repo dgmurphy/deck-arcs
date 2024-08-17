@@ -1,0 +1,2777 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 2,
+                "type": "major",
+                "name": "Honolulu Int'l",
+                "abbrev": "HNL",
+                "location": "terminal",
+                "gps_code": "PHNL",
+                "iata_code": "HNL",
+                "wikipedia": "http://en.wikipedia.org/wiki/Honolulu_International_Airport",
+                "natlscale": 150,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -157.91978317375475,
+                    21.33202231502399
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 8,
+                "type": "major",
+                "name": "Liverpool John Lennon",
+                "abbrev": "LPL",
+                "location": "ramp",
+                "gps_code": "EGGP",
+                "iata_code": "LPL",
+                "wikipedia": "http://en.wikipedia.org/wiki/Liverpool_John_Lennon_Airport",
+                "natlscale": 10,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.858620657849379,
+                    53.336375105442215
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 8,
+                "type": "major",
+                "name": "Amarillo Int'l",
+                "abbrev": "AMA",
+                "location": "terminal",
+                "gps_code": "KAMA",
+                "iata_code": "AMA",
+                "wikipedia": "http://en.wikipedia.org/wiki/Rick_Husband_Amarillo_International_Airport",
+                "natlscale": 10,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -101.70535277269678,
+                    35.218403191939814
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 8,
+                "type": "major",
+                "name": "Birmingham Int'l",
+                "abbrev": "BHM",
+                "location": "terminal",
+                "gps_code": "KBHM",
+                "iata_code": "BHM",
+                "wikipedia": "http://en.wikipedia.org/wiki/Birmingham_International_Airport_(US)",
+                "natlscale": 10,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.75237736154624,
+                    33.56186728280577
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 8,
+                "type": "major",
+                "name": "Logan Int'l",
+                "abbrev": "BIL",
+                "location": "terminal",
+                "gps_code": "KBIL",
+                "iata_code": "BIL",
+                "wikipedia": "http://en.wikipedia.org/wiki/Billings_Logan_International_Airport",
+                "natlscale": 10,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -108.53692938812462,
+                    45.803685571527836
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 8,
+                "type": "major",
+                "name": "Bristol Int'l",
+                "abbrev": "BRS",
+                "location": "terminal",
+                "gps_code": "EGGD",
+                "iata_code": "BRS",
+                "wikipedia": "http://en.wikipedia.org/wiki/Bristol_International_Airport",
+                "natlscale": 10,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.710864691343084,
+                    51.38629341891484
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 8,
+                "type": "major",
+                "name": "Baton Rouge Metro",
+                "abbrev": "BTR",
+                "location": "terminal",
+                "gps_code": "KBTR",
+                "iata_code": "BTR",
+                "wikipedia": "http://en.wikipedia.org/wiki/Baton_Rouge_Metropolitan_Airport",
+                "natlscale": 10,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -91.15675440481048,
+                    30.532613804058556
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 8,
+                "type": "major",
+                "name": "Casper/Natrona County Int'l",
+                "abbrev": "CPR",
+                "location": "terminal",
+                "gps_code": "KCPR",
+                "iata_code": "CPR",
+                "wikipedia": "http://en.wikipedia.org/wiki/Casper/Natrona_County_International_Airport",
+                "natlscale": 10,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -106.46444480969178,
+                    42.89719004830057
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 8,
+                "type": "major",
+                "name": "James M. Cox Dayton Int'l",
+                "abbrev": "DAY",
+                "location": "terminal",
+                "gps_code": "KDAY",
+                "iata_code": "DAY",
+                "wikipedia": "http://en.wikipedia.org/wiki/Dayton_International_Airport",
+                "natlscale": 10,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.22045942381024,
+                    39.8990402865362
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 8,
+                "type": "major",
+                "name": "Washington Nat'l",
+                "abbrev": "DCA",
+                "location": "terminal",
+                "gps_code": "KDCA",
+                "iata_code": "DCA",
+                "wikipedia": "http://en.wikipedia.org/wiki/Ronald_Reagan_Washington_National_Airport",
+                "natlscale": 10,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.04333739256312,
+                    38.853716201212265
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 8,
+                "type": "major",
+                "name": "Edinburgh Int'l",
+                "abbrev": "EDI",
+                "location": "terminal",
+                "gps_code": "EGPH",
+                "iata_code": "EDI",
+                "wikipedia": "http://en.wikipedia.org/wiki/Edinburgh_Airport",
+                "natlscale": 10,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.364284685135545,
+                    55.9485540113639
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 8,
+                "type": "major",
+                "name": "Spokane Int'l",
+                "abbrev": "GEG",
+                "location": "terminal",
+                "gps_code": "KGEG",
+                "iata_code": "GEG",
+                "wikipedia": "http://en.wikipedia.org/wiki/Spokane_International_Airport",
+                "natlscale": 10,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.53683662858516,
+                    47.62547812783678
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 8,
+                "type": "major",
+                "name": "Triad Int'l",
+                "abbrev": "GSO",
+                "location": "terminal",
+                "gps_code": "KGSO",
+                "iata_code": "GSO",
+                "wikipedia": "http://en.wikipedia.org/wiki/Piedmont_Triad_International_Airport",
+                "natlscale": 10,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.93648675774836,
+                    36.105378199893245
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 8,
+                "type": "major",
+                "name": "Huntsville Int'l",
+                "abbrev": "HSV",
+                "location": "terminal",
+                "gps_code": "KHSV",
+                "iata_code": "HSV",
+                "wikipedia": "http://en.wikipedia.org/wiki/Huntsville_International_Airport",
+                "natlscale": 10,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.77494305633734,
+                    34.648334460931935
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 8,
+                "type": "major",
+                "name": "Kansas City Int'l",
+                "abbrev": "ICT",
+                "location": "terminal",
+                "gps_code": "KICT",
+                "iata_code": "ICT",
+                "wikipedia": "http://en.wikipedia.org/wiki/Kansas_City_International_Airport",
+                "natlscale": 10,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -97.4287387683976,
+                    37.6529279603903
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 8,
+                "type": "major",
+                "name": "Blue Grass",
+                "abbrev": "LEX",
+                "location": "terminal",
+                "gps_code": "KLEX",
+                "iata_code": "LEX",
+                "wikipedia": "http://en.wikipedia.org/wiki/Blue_Grass_Airport",
+                "natlscale": 10,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.59826819187857,
+                    38.03742731813716
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 8,
+                "type": "major",
+                "name": "Little Rock National",
+                "abbrev": "LIT",
+                "location": "terminal",
+                "gps_code": "KLIT",
+                "iata_code": "LIT",
+                "wikipedia": "http://en.wikipedia.org/wiki/Little_Rock_National_Airport",
+                "natlscale": 10,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -92.22058813192886,
+                    34.728430041517875
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 8,
+                "type": "major",
+                "name": "London Luton",
+                "abbrev": "LTN",
+                "location": "terminal",
+                "gps_code": "EGGW",
+                "iata_code": "LTN",
+                "wikipedia": "http://en.wikipedia.org/wiki/London_Luton_Airport",
+                "natlscale": 10,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.376227267397439,
+                    51.8802952570969
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 8,
+                "type": "major",
+                "name": "Chicago Midway Int'l",
+                "abbrev": "MDW",
+                "location": "terminal",
+                "gps_code": "KMDW",
+                "iata_code": "MDW",
+                "wikipedia": "http://en.wikipedia.org/wiki/Chicago_Midway_International_Airport",
+                "natlscale": 10,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.74212668856121,
+                    41.78834925974092
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 8,
+                "type": "major",
+                "name": "Montgomery Reg.",
+                "abbrev": "MGM",
+                "location": "terminal",
+                "gps_code": "KMGM",
+                "iata_code": "MGM",
+                "wikipedia": "http://en.wikipedia.org/wiki/Montgomery_Regional_Airport",
+                "natlscale": 10,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.39030746026862,
+                    32.304587990963064
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 8,
+                "type": "major",
+                "name": "Manchester-Boston Reg.",
+                "abbrev": "MHT",
+                "location": "terminal",
+                "gps_code": "KMHT",
+                "iata_code": "MHT",
+                "wikipedia": "http://en.wikipedia.org/wiki/Manchester-Boston_Regional_Airport",
+                "natlscale": 10,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -71.43752390918567,
+                    42.92791399458855
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 8,
+                "type": "major",
+                "name": "Nurnberg",
+                "abbrev": "NUE",
+                "location": "terminal",
+                "gps_code": "EDDN",
+                "iata_code": "NUE",
+                "wikipedia": "http://en.wikipedia.org/wiki/Nuremberg_Airport",
+                "natlscale": 10,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.077417973909556,
+                    49.49450521703445
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 8,
+                "type": "major",
+                "name": "Odessa Int'l",
+                "abbrev": "ODS",
+                "location": "terminal",
+                "gps_code": "UKOO",
+                "iata_code": "ODS",
+                "wikipedia": "http://en.wikipedia.org/wiki/Odessa_International_Airport",
+                "natlscale": 10,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.676830831020588,
+                    46.44062687591064
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 8,
+                "type": "major",
+                "name": "Richmond Int'l",
+                "abbrev": "RIC",
+                "location": "terminal",
+                "gps_code": "KRIC",
+                "iata_code": "RIC",
+                "wikipedia": "http://en.wikipedia.org/wiki/Richmond_International_Airport",
+                "natlscale": 10,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.33311963811302,
+                    37.50828997509012
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 8,
+                "type": "major",
+                "name": "Greater Rochester Int'l",
+                "abbrev": "ROC",
+                "location": "terminal",
+                "gps_code": "KROC",
+                "iata_code": "ROC",
+                "wikipedia": "http://en.wikipedia.org/wiki/Greater_Rochester_International_Airport",
+                "natlscale": 10,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.66524450621966,
+                    43.127551982648235
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 8,
+                "type": "major",
+                "name": "Springfield Reg.",
+                "abbrev": "SGF",
+                "location": "terminal",
+                "gps_code": "KSGF",
+                "iata_code": "SGF",
+                "wikipedia": "http://en.wikipedia.org/wiki/Springfield/Branson_National_Airport",
+                "natlscale": 10,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -93.3826379012003,
+                    37.24214449030243
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 8,
+                "type": "major",
+                "name": "Shreveport Reg.",
+                "abbrev": "SHV",
+                "location": "terminal",
+                "gps_code": "KSHV",
+                "iata_code": "SHV",
+                "wikipedia": "http://en.wikipedia.org/wiki/Shreveport_Regional_Airport",
+                "natlscale": 10,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -93.82852222295027,
+                    32.45457988665127
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 8,
+                "type": "major",
+                "name": "McNary Field",
+                "abbrev": "SLE",
+                "location": "terminal",
+                "gps_code": "KSLE",
+                "iata_code": "SLE",
+                "wikipedia": "http://en.wikipedia.org/wiki/McNary_Field",
+                "natlscale": 10,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -123.00787147940393,
+                    44.91051384521425
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 8,
+                "type": "major",
+                "name": "Shannon",
+                "abbrev": "SNN",
+                "location": "terminal",
+                "gps_code": "EINN",
+                "iata_code": "SNN",
+                "wikipedia": "http://en.wikipedia.org/wiki/Shannon_Airport",
+                "natlscale": 10,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -8.922428855576857,
+                    52.693453710253166
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 8,
+                "type": "major",
+                "name": "Tallahassee Reg.",
+                "abbrev": "TLH",
+                "location": "terminal",
+                "gps_code": "KTLH",
+                "iata_code": "TLH",
+                "wikipedia": "http://en.wikipedia.org/wiki/Tallahassee_Regional_Airport",
+                "natlscale": 10,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.34499539848576,
+                    30.395557617693783
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 8,
+                "type": "major",
+                "name": "Bordeaux",
+                "abbrev": "BOD",
+                "location": "terminal",
+                "gps_code": "LFBD",
+                "iata_code": "BOD",
+                "wikipedia": "http://en.wikipedia.org/wiki/Bordeaux_-_M%C3%A9rignac_Airport",
+                "natlscale": 10,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.701793449075243,
+                    44.832110866267385
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 8,
+                "type": "major",
+                "name": "Toulouse-Blagnac",
+                "abbrev": "TLS",
+                "location": "terminal",
+                "gps_code": "LFBO",
+                "iata_code": "TLS",
+                "wikipedia": "http://en.wikipedia.org/wiki/Toulouse-Blagnac_Airport",
+                "natlscale": 10,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.373509185511527,
+                    43.63046256616009
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 7,
+                "type": "major",
+                "name": "Philip S. W. Goldson Int'l",
+                "abbrev": "BZE",
+                "location": "terminal",
+                "gps_code": "MZBZ",
+                "iata_code": "BZE",
+                "wikipedia": "http://en.wikipedia.org/wiki/Philip_S._W._Goldson_International_Airport",
+                "natlscale": 15,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -88.30820640330747,
+                    17.536068657552093
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 7,
+                "type": "major",
+                "name": "Corpus Christi Int'l",
+                "abbrev": "CRP",
+                "location": "terminal",
+                "gps_code": "KCRP",
+                "iata_code": "CRP",
+                "wikipedia": "http://en.wikipedia.org/wiki/Corpus_Christi_International_Airport",
+                "natlscale": 15,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -97.50226787102976,
+                    27.77445607008226
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 7,
+                "type": "major",
+                "name": "Fort Worth Meacham Field",
+                "abbrev": "FTW",
+                "location": "terminal",
+                "gps_code": "KFTW",
+                "iata_code": "FTW",
+                "wikipedia": "http://en.wikipedia.org/wiki/Fort_Worth_Meacham_International_Airport",
+                "natlscale": 15,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -97.35513485615866,
+                    32.82075290479723
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 7,
+                "type": "major",
+                "name": "Indianapolis Int'l",
+                "abbrev": "IND",
+                "location": "terminal",
+                "gps_code": "KIND",
+                "iata_code": "IND",
+                "wikipedia": "http://en.wikipedia.org/wiki/Indianapolis_International_Airport",
+                "natlscale": 15,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.27340036508855,
+                    39.730204370396905
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 7,
+                "type": "major",
+                "name": "Leeds Bradford",
+                "abbrev": "LBA",
+                "location": "terminal",
+                "gps_code": "EGNM",
+                "iata_code": "LBA",
+                "wikipedia": "http://en.wikipedia.org/wiki/Leeds_Bradford_International_Airport",
+                "natlscale": 15,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.659831067347459,
+                    53.86908194744343
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 7,
+                "type": "major",
+                "name": "Naples Int'l",
+                "abbrev": "NAP",
+                "location": "terminal",
+                "gps_code": "LIRN",
+                "iata_code": "NAP",
+                "wikipedia": "http://en.wikipedia.org/wiki/Naples_International_Airport",
+                "natlscale": 15,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.282844434020328,
+                    40.87807288436389
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 7,
+                "type": "major",
+                "name": "Oakland Int'l",
+                "abbrev": "OAK",
+                "location": "terminal",
+                "gps_code": "KOAK",
+                "iata_code": "OAK",
+                "wikipedia": "http://en.wikipedia.org/wiki/Oakland_International_Airport",
+                "natlscale": 15,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.21326125786332,
+                    37.71230369516912
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 7,
+                "type": "major",
+                "name": "Ontario Int'l",
+                "abbrev": "ONT",
+                "location": "parking",
+                "gps_code": "KONT",
+                "iata_code": "ONT",
+                "wikipedia": "http://en.wikipedia.org/wiki/LA/Ontario_International_Airport",
+                "natlscale": 15,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.5923276516506,
+                    34.06019110206596
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 7,
+                "type": "major",
+                "name": "Cork",
+                "abbrev": "ORK",
+                "location": "terminal",
+                "gps_code": "EICK",
+                "iata_code": "ORK",
+                "wikipedia": "http://en.wikipedia.org/wiki/Cork_Airport",
+                "natlscale": 15,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -8.490141999838173,
+                    51.84854054199235
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 7,
+                "type": "major",
+                "name": "Reno-Tahoe Int'l",
+                "abbrev": "RNO",
+                "location": "terminal",
+                "gps_code": "KRNO",
+                "iata_code": "RNO",
+                "wikipedia": "http://en.wikipedia.org/wiki/Reno-Tahoe_International_Airport",
+                "natlscale": 15,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.77528330810486,
+                    39.505849901470334
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 7,
+                "type": "major",
+                "name": "Princess Juliana Int'l",
+                "abbrev": "SXM",
+                "location": "terminal",
+                "gps_code": "TNCM",
+                "iata_code": "SXM",
+                "wikipedia": "http://en.wikipedia.org/wiki/Princess_Juliana_International_Airport",
+                "natlscale": 15,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -63.1122760858602,
+                    18.042244021474033
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 7,
+                "type": "major",
+                "name": "Tucson Int'l",
+                "abbrev": "TUS",
+                "location": "terminal",
+                "gps_code": "KTUS",
+                "iata_code": "TUS",
+                "wikipedia": "http://en.wikipedia.org/wiki/Tucson_International_Airport",
+                "natlscale": 15,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -110.93771323213196,
+                    32.12035234418979
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 7,
+                "type": "major",
+                "name": "Luxembourg-Findel",
+                "abbrev": "LUX",
+                "location": "terminal",
+                "gps_code": "ELLX",
+                "iata_code": "LUX",
+                "wikipedia": "http://en.wikipedia.org/wiki/Luxembourg-Findel_International_Airport",
+                "natlscale": 15,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    6.216421217287305,
+                    49.63430409251016
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 6,
+                "type": "major",
+                "name": "Albuquerque Int'l",
+                "abbrev": "ABQ",
+                "location": "terminal",
+                "gps_code": "KABQ",
+                "iata_code": "ABQ",
+                "wikipedia": "http://en.wikipedia.org/wiki/Albuquerque_International_Sunport",
+                "natlscale": 20,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -106.6166851616002,
+                    35.04915780182765
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 6,
+                "type": "major",
+                "name": "Bradley Int'l",
+                "abbrev": "BDL",
+                "location": "terminal",
+                "gps_code": "KBDL",
+                "iata_code": "BDL",
+                "wikipedia": "http://en.wikipedia.org/wiki/Bradley_International_Airport",
+                "natlscale": 20,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -72.68539474333903,
+                    41.93031600583518
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 6,
+                "type": "major",
+                "name": "City of Colorado Springs",
+                "abbrev": "COS",
+                "location": "terminal",
+                "gps_code": "KCOS",
+                "iata_code": "COS",
+                "wikipedia": "http://en.wikipedia.org/wiki/Colorado_Springs_Airport",
+                "natlscale": 20,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -104.70088027411134,
+                    38.79742487791252
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 6,
+                "type": "major",
+                "name": "Greater Cincinnati Int'l",
+                "abbrev": "CVG",
+                "location": "terminal",
+                "gps_code": "KCVG",
+                "iata_code": "CVG",
+                "wikipedia": "http://en.wikipedia.org/wiki/Cincinnati/Northern_Kentucky_International_Airport",
+                "natlscale": 20,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.65616991533919,
+                    39.05541890478304
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 6,
+                "type": "major",
+                "name": "Dallas Love Field",
+                "abbrev": "DAL",
+                "location": "terminal",
+                "gps_code": "KDAL",
+                "iata_code": "DAL",
+                "wikipedia": "http://en.wikipedia.org/wiki/Dallas_Love_Field",
+                "natlscale": 20,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -96.84986377097995,
+                    32.84442537327384
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 6,
+                "type": "major",
+                "name": "Des Moines Int'l",
+                "abbrev": "DSM",
+                "location": "terminal",
+                "gps_code": "KDSM",
+                "iata_code": "DSM",
+                "wikipedia": "http://en.wikipedia.org/wiki/Des_Moines_International_Airport",
+                "natlscale": 20,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -93.64846125637362,
+                    41.5327904242113
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 6,
+                "type": "major",
+                "name": "Dulles Int'l",
+                "abbrev": "IAD",
+                "location": "terminal",
+                "gps_code": "KIAD",
+                "iata_code": "IAD",
+                "wikipedia": "http://en.wikipedia.org/wiki/Washington_Dulles_International_Airport",
+                "natlscale": 20,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.44779257692062,
+                    38.95277403795302
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 6,
+                "type": "major",
+                "name": "Jackson Int'l",
+                "abbrev": "JAN",
+                "location": "terminal",
+                "gps_code": "KJAN",
+                "iata_code": "JAN",
+                "wikipedia": "http://en.wikipedia.org/wiki/Jackson-Evers_International_Airport",
+                "natlscale": 20,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -90.07509862769238,
+                    32.31006002736351
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 6,
+                "type": "major",
+                "name": "Jacksonville Int'l",
+                "abbrev": "JAX",
+                "location": "terminal",
+                "gps_code": "KJAX",
+                "iata_code": "JAX",
+                "wikipedia": "http://en.wikipedia.org/wiki/Jacksonville_International_Airport",
+                "natlscale": 20,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.68357672783112,
+                    30.491352730947966
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 6,
+                "type": "major",
+                "name": "LaGuardia",
+                "abbrev": "LGA",
+                "location": "terminal",
+                "gps_code": "KLGA",
+                "iata_code": "LGA",
+                "wikipedia": "http://en.wikipedia.org/wiki/LaGuardia_Airport",
+                "natlscale": 20,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.8719858204814,
+                    40.77455393988576
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 6,
+                "type": "major",
+                "name": "Manchester Int'l",
+                "abbrev": "MAN",
+                "location": "terminal",
+                "gps_code": "EGCC",
+                "iata_code": "MAN",
+                "wikipedia": "http://en.wikipedia.org/wiki/Manchester_Airport",
+                "natlscale": 20,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.273371590694274,
+                    53.36248960665181
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 6,
+                "type": "major",
+                "name": "Kansas City Int'l",
+                "abbrev": "MCI",
+                "location": "terminal",
+                "gps_code": "KMCI",
+                "iata_code": "MCI",
+                "wikipedia": "http://en.wikipedia.org/wiki/Kansas_City_International_Airport",
+                "natlscale": 20,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -94.71591485791544,
+                    39.297895826365945
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 6,
+                "type": "major",
+                "name": "Marseille Provence Airport",
+                "abbrev": "MRS",
+                "location": "terminal",
+                "gps_code": "LFML",
+                "iata_code": "MRS",
+                "wikipedia": "http://en.wikipedia.org/wiki/Marseille_Provence_Airport",
+                "natlscale": 20,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    5.221379177203373,
+                    43.44106000164679
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 6,
+                "type": "major",
+                "name": "Will Rogers",
+                "abbrev": "OKC",
+                "location": "terminal",
+                "gps_code": "KOKC",
+                "iata_code": "OKC",
+                "wikipedia": "http://en.wikipedia.org/wiki/Will_Rogers_World_Airport",
+                "natlscale": 20,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -97.59611775420922,
+                    35.39527749117442
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 6,
+                "type": "major",
+                "name": "Norfolk Int'l",
+                "abbrev": "ORF",
+                "location": "terminal",
+                "gps_code": "KORF",
+                "iata_code": "ORF",
+                "wikipedia": "http://en.wikipedia.org/wiki/Norfolk_International_Airport",
+                "natlscale": 20,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.2044231712327,
+                    36.89823946736742
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 6,
+                "type": "major",
+                "name": "Palm Beach Int'l",
+                "abbrev": "PBI",
+                "location": "terminal",
+                "gps_code": "KPBI",
+                "iata_code": "PBI",
+                "wikipedia": "http://en.wikipedia.org/wiki/Palm_Beach_International_Airport",
+                "natlscale": 20,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.09018933833873,
+                    26.688441666432965
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 6,
+                "type": "major",
+                "name": "Greater Pittsburgh Int'l",
+                "abbrev": "PIT",
+                "location": "terminal",
+                "gps_code": "KPIT",
+                "iata_code": "PIT",
+                "wikipedia": "http://en.wikipedia.org/wiki/Pittsburgh_International_Airport",
+                "natlscale": 20,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.2561290571918,
+                    40.496051891528495
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 6,
+                "type": "major",
+                "name": "Birmingham Int'l",
+                "abbrev": "BHX",
+                "location": "terminal",
+                "gps_code": "EGBB",
+                "iata_code": "BHX",
+                "wikipedia": "http://en.wikipedia.org/wiki/Birmingham_International_Airport_(United_Kingdom)",
+                "natlscale": 20,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.733731704344524,
+                    52.45290855428381
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 6,
+                "type": "major",
+                "name": "San Diego Int'l",
+                "abbrev": "SAN",
+                "location": "terminal",
+                "gps_code": "KSAN",
+                "iata_code": "SAN",
+                "wikipedia": "http://en.wikipedia.org/wiki/San_Diego_International_Airport",
+                "natlscale": 20,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.19751102573103,
+                    32.73226455701319
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 6,
+                "type": "major",
+                "name": "San Antonio Int'l",
+                "abbrev": "SAT",
+                "location": "terminal",
+                "gps_code": "KSAT",
+                "iata_code": "SAT",
+                "wikipedia": "http://en.wikipedia.org/wiki/San_Antonio_International_Airport",
+                "natlscale": 20,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -98.4719699991559,
+                    29.526620339131505
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 6,
+                "type": "major",
+                "name": "Savannah Int'l",
+                "abbrev": "SAV",
+                "location": "terminal",
+                "gps_code": "KSAV",
+                "iata_code": "SAV",
+                "wikipedia": "http://en.wikipedia.org/wiki/Savannah/Hilton_Head_International_Airport",
+                "natlscale": 20,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.20996477509134,
+                    32.13564155229021
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 6,
+                "type": "major",
+                "name": "Sacramento Int'l",
+                "abbrev": "SMF",
+                "location": "terminal",
+                "gps_code": "KSMF",
+                "iata_code": "SMF",
+                "wikipedia": "http://en.wikipedia.org/wiki/Sacramento_International_Airport",
+                "natlscale": 20,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.58789487772277,
+                    38.6927238925554
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 6,
+                "type": "major",
+                "name": "Syracuse Hancock Int'l",
+                "abbrev": "SYR",
+                "location": "terminal",
+                "gps_code": "KSYR",
+                "iata_code": "SYR",
+                "wikipedia": "http://en.wikipedia.org/wiki/Syracuse_Hancock_International_Airport",
+                "natlscale": 20,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.1130789991049,
+                    43.13178449437413
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 6,
+                "type": "major",
+                "name": "Tulsa Int'l",
+                "abbrev": "TUL",
+                "location": "terminal",
+                "gps_code": "KTUL",
+                "iata_code": "TUL",
+                "wikipedia": "http://en.wikipedia.org/wiki/Tulsa_International_Airport",
+                "natlscale": 20,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -95.88988227154202,
+                    36.19012756519499
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 6,
+                "type": "major",
+                "name": "Mcghee Tyson",
+                "abbrev": "TYS",
+                "location": "terminal",
+                "gps_code": "KTYS",
+                "iata_code": "TYS",
+                "wikipedia": "http://en.wikipedia.org/wiki/McGhee_Tyson_Airport",
+                "natlscale": 20,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.98993783275846,
+                    35.80574480270883
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 6,
+                "type": "major",
+                "name": "Edmonton Int'l",
+                "abbrev": "YEG",
+                "location": "terminal",
+                "gps_code": "CYEG",
+                "iata_code": "YEG",
+                "wikipedia": "http://en.wikipedia.org/wiki/Edmonton_International_Airport",
+                "natlscale": 20,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -113.5844925644056,
+                    53.307200161918324
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 6,
+                "type": "major",
+                "name": "Halifax Int'l",
+                "abbrev": "YHZ",
+                "location": "terminal",
+                "gps_code": "CYHZ",
+                "iata_code": "YHZ",
+                "wikipedia": "http://en.wikipedia.org/wiki/Halifax_International_Airport",
+                "natlscale": 20,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -63.514965250167336,
+                    44.886545450100954
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 6,
+                "type": "major",
+                "name": "Victoria Int'l",
+                "abbrev": "YYJ",
+                "location": "terminal",
+                "gps_code": "CYYJ",
+                "iata_code": "YYJ",
+                "wikipedia": "http://en.wikipedia.org/wiki/Victoria_International_Airport",
+                "natlscale": 20,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -123.43062453952774,
+                    48.64052948217902
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 6,
+                "type": "major",
+                "name": "General Mitchell Int'l",
+                "abbrev": "MKE",
+                "location": "terminal",
+                "gps_code": "KMKE",
+                "iata_code": "MKE",
+                "wikipedia": "http://en.wikipedia.org/wiki/General_Mitchell_International_Airport",
+                "natlscale": 20,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.90210562507438,
+                    42.94791987295855
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 6,
+                "type": "major",
+                "name": "Cologne/Bonn",
+                "abbrev": "CGN",
+                "location": "terminal",
+                "gps_code": "EDDK",
+                "iata_code": "CGN",
+                "wikipedia": "http://en.wikipedia.org/wiki/Cologne_Bonn_Airport",
+                "natlscale": 20,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    7.122359755245386,
+                    50.87825966294709
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 5,
+                "type": "major",
+                "name": "Austin-Bergstrom Int'l",
+                "abbrev": "AUS",
+                "location": "terminal",
+                "gps_code": "KAUS",
+                "iata_code": "AUS",
+                "wikipedia": "http://en.wikipedia.org/wiki/Austin-Bergstrom_International_Airport",
+                "natlscale": 30,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -97.66683676460543,
+                    30.202108192074945
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 5,
+                "type": "major",
+                "name": "John F Kennedy Int'l",
+                "abbrev": "JFK",
+                "location": "parking",
+                "gps_code": "KJFK",
+                "iata_code": "JFK",
+                "wikipedia": "http://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
+                "natlscale": 30,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.78632686092955,
+                    40.645959558408144
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 5,
+                "type": "major",
+                "name": "Dane Cty. Reg. (Truax Field)",
+                "abbrev": "MSN",
+                "location": "terminal",
+                "gps_code": "KMSN",
+                "iata_code": "MSN",
+                "wikipedia": "http://en.wikipedia.org/wiki/Dane_County_Regional_Airport",
+                "natlscale": 30,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -89.34578478944866,
+                    43.13630823858675
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 5,
+                "type": "major",
+                "name": "Southwest Florida Int'l",
+                "abbrev": "RSW",
+                "location": "terminal",
+                "gps_code": "KRSW",
+                "iata_code": "RSW",
+                "wikipedia": "http://en.wikipedia.org/wiki/Southwest_Florida_International_Airport",
+                "natlscale": 30,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.75512314093055,
+                    26.527928806765104
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 5,
+                "type": "major",
+                "name": "San Jose Int'l",
+                "abbrev": "SJC",
+                "location": "terminal",
+                "gps_code": "KSJC",
+                "iata_code": "SJC",
+                "wikipedia": "http://en.wikipedia.org/wiki/San_Jose_International_Airport",
+                "natlscale": 30,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.92942898353154,
+                    37.36949059089655
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 5,
+                "type": "major",
+                "name": "John Wayne",
+                "abbrev": "SNA",
+                "location": "terminal",
+                "gps_code": "KSNA",
+                "iata_code": "SNA",
+                "wikipedia": "http://en.wikipedia.org/wiki/John_Wayne_Airport",
+                "natlscale": 30,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.8614892203934,
+                    33.6794857329549
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 5,
+                "type": "major",
+                "name": "Stuttgart",
+                "abbrev": "STR",
+                "location": "terminal",
+                "gps_code": "EDDS",
+                "iata_code": "STR",
+                "wikipedia": "http://en.wikipedia.org/wiki/Stuttgart_Airport",
+                "natlscale": 30,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.193951089455357,
+                    48.69010513589129
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 5,
+                "type": "major",
+                "name": "Louisville Int'l",
+                "abbrev": "SDF",
+                "location": "terminal",
+                "gps_code": "KSDF",
+                "iata_code": "SDF",
+                "wikipedia": "http://en.wikipedia.org/wiki/Louisville_International_Airport",
+                "natlscale": 30,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.74170275973673,
+                    38.18602071526992
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 5,
+                "type": "major",
+                "name": "Owen Roberts Int'l",
+                "abbrev": "GCM",
+                "location": "terminal",
+                "gps_code": "MWCR",
+                "iata_code": "GCM",
+                "wikipedia": "http://en.wikipedia.org/wiki/Owen_Roberts_International_Airport",
+                "natlscale": 30,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.35767061622893,
+                    19.29591074371222
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 4,
+                "type": "major",
+                "name": "Macdonald-Cartier Int'l",
+                "abbrev": "YOW",
+                "location": "terminal",
+                "gps_code": "CYOW",
+                "iata_code": "YOW",
+                "wikipedia": "http://en.wikipedia.org/wiki/Ottawa_Macdonald-Cartier_International_Airport",
+                "natlscale": 50,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.66489338702053,
+                    45.3201348196531
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 4,
+                "type": "major",
+                "name": "Nashville Int'l",
+                "abbrev": "BNA",
+                "location": "terminal",
+                "gps_code": "KBNA",
+                "iata_code": "BNA",
+                "wikipedia": "http://en.wikipedia.org/wiki/Nashville_International_Airport",
+                "natlscale": 50,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.66928673563747,
+                    36.13148763616973
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 4,
+                "type": "major",
+                "name": "Boise Air Terminal",
+                "abbrev": "BOI",
+                "location": "terminal",
+                "gps_code": "KBOI",
+                "iata_code": "BOI",
+                "wikipedia": "http://en.wikipedia.org/wiki/Boise_Airport",
+                "natlscale": 50,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.2218410705487,
+                    43.5689592234704
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 4,
+                "type": "major",
+                "name": "Greater Buffalo Int'l",
+                "abbrev": "BUF",
+                "location": "terminal",
+                "gps_code": "KBUF",
+                "iata_code": "BUF",
+                "wikipedia": "http://en.wikipedia.org/wiki/Buffalo_Niagara_International_Airport",
+                "natlscale": 50,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.73199655233083,
+                    42.93403374935259
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 4,
+                "type": "major",
+                "name": "Norman Manley Int'l",
+                "abbrev": "KIN",
+                "location": "terminal",
+                "gps_code": "MKJP",
+                "iata_code": "KIN",
+                "wikipedia": "http://en.wikipedia.org/wiki/Norman_Manley_International_Airport",
+                "natlscale": 50,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.77868976165765,
+                    17.937575155275226
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 4,
+                "type": "major",
+                "name": "Memphis Int'l",
+                "abbrev": "MEM",
+                "location": "terminal",
+                "gps_code": "KMEM",
+                "iata_code": "MEM",
+                "wikipedia": "http://en.wikipedia.org/wiki/Memphis_International_Airport",
+                "natlscale": 50,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -89.98162803532371,
+                    35.04441012400894
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 4,
+                "type": "major",
+                "name": "Miami Int'l",
+                "abbrev": "MIA",
+                "location": "terminal",
+                "gps_code": "KMIA",
+                "iata_code": "MIA",
+                "wikipedia": "http://en.wikipedia.org/wiki/Miami_International_Airport",
+                "natlscale": 50,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.2789718277441,
+                    25.79494072124062
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 4,
+                "type": "major",
+                "name": "New Orleans Int'l",
+                "abbrev": "MSY",
+                "location": "terminal",
+                "gps_code": "KMSY",
+                "iata_code": "MSY",
+                "wikipedia": "http://en.wikipedia.org/wiki/Louis_Armstrong_New_Orleans_International_Airport",
+                "natlscale": 50,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -90.25669394805942,
+                    29.985114146062223
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 4,
+                "type": "major",
+                "name": "Portland Int'l",
+                "abbrev": "PDX",
+                "location": "terminal",
+                "gps_code": "KPDX",
+                "iata_code": "PDX",
+                "wikipedia": "http://en.wikipedia.org/wiki/Portland_International_Airport",
+                "natlscale": 50,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.5927388812541,
+                    45.58895693153053
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 4,
+                "type": "major",
+                "name": "Durham Int'l",
+                "abbrev": "RDU",
+                "location": "terminal",
+                "gps_code": "KRDU",
+                "iata_code": "RDU",
+                "wikipedia": "http://en.wikipedia.org/wiki/Raleigh-Durham_International_Airport",
+                "natlscale": 50,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.79138140067508,
+                    35.8752323452255
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 4,
+                "type": "major",
+                "name": "Tampa Int'l",
+                "abbrev": "TPA",
+                "location": "parking",
+                "gps_code": "KTPA",
+                "iata_code": "TPA",
+                "wikipedia": "http://en.wikipedia.org/wiki/Tampa_International_Airport",
+                "natlscale": 50,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -82.534824252055,
+                    27.980040085218384
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 4,
+                "type": "major",
+                "name": "Vancouver Int'l",
+                "abbrev": "YVR",
+                "location": "terminal",
+                "gps_code": "CYVR",
+                "iata_code": "YVR",
+                "wikipedia": "http://en.wikipedia.org/wiki/Vancouver_International_Airport",
+                "natlscale": 50,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -123.18086700381177,
+                    49.19355903957153
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 4,
+                "type": "major",
+                "name": "Winnipeg Int'l",
+                "abbrev": "YWG",
+                "location": "terminal",
+                "gps_code": "CYWG",
+                "iata_code": "YWG",
+                "wikipedia": "http://en.wikipedia.org/wiki/Winnipeg_James_Armstrong_Richardson_International_Airport",
+                "natlscale": 50,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -97.22676948095848,
+                    49.90333024716708
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 4,
+                "type": "major",
+                "name": "Calgary Int'l",
+                "abbrev": "YYC",
+                "location": "terminal",
+                "gps_code": "CYYC",
+                "iata_code": "YYC",
+                "wikipedia": "http://en.wikipedia.org/wiki/Calgary_International_Airport",
+                "natlscale": 50,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -114.01056050023648,
+                    51.130857256754865
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 4,
+                "type": "major",
+                "name": "Paris Orly",
+                "abbrev": "ORY",
+                "location": "parking",
+                "gps_code": "LFPO",
+                "iata_code": "ORY",
+                "wikipedia": "http://en.wikipedia.org/wiki/Orly_Airport_(Paris)",
+                "natlscale": 50,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.367379127837731,
+                    48.73130304580517
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 4,
+                "type": "major",
+                "name": "Quebec",
+                "abbrev": "YQB",
+                "location": "terminal",
+                "gps_code": "CYQB",
+                "iata_code": "YQB",
+                "wikipedia": "http://en.wikipedia.org/wiki/Qu%C3%A9bec/Jean_Lesage_International_Airport",
+                "natlscale": 50,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -71.38392807117314,
+                    46.79156843633076
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 4,
+                "type": "major",
+                "name": "Montreal-Trudeau",
+                "abbrev": "YUL",
+                "location": "terminal",
+                "gps_code": "CYUL",
+                "iata_code": "YUL",
+                "wikipedia": "http://en.wikipedia.org/wiki/Montr%C3%A9al-Pierre_Elliott_Trudeau_International_Airport",
+                "natlscale": 50,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.74931626504166,
+                    45.45835122945313
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 3,
+                "type": "major",
+                "name": "Douglas Int'l",
+                "abbrev": "CLT",
+                "location": "terminal",
+                "gps_code": "KCLT",
+                "iata_code": "CLT",
+                "wikipedia": "http://en.wikipedia.org/wiki/Charlotte/Douglas_International_Airport",
+                "natlscale": 75,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.94392773427626,
+                    35.220428168559714
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 3,
+                "type": "major",
+                "name": "Detroit Metro",
+                "abbrev": "DTW",
+                "location": "terminal",
+                "gps_code": "KDTW",
+                "iata_code": "DTW",
+                "wikipedia": "http://en.wikipedia.org/wiki/Detroit_Metropolitan_Wayne_County_Airport",
+                "natlscale": 75,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.3478935065615,
+                    42.22572045080041
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 3,
+                "type": "major",
+                "name": "Fairbanks Int'l",
+                "abbrev": "FAI",
+                "location": "terminal",
+                "gps_code": "PAFA",
+                "iata_code": "FAI",
+                "wikipedia": "http://en.wikipedia.org/wiki/Fairbanks_International_Airport",
+                "natlscale": 75,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -147.86572112079517,
+                    64.81809811173692
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 3,
+                "type": "major",
+                "name": "Hamburg",
+                "abbrev": "HAM",
+                "location": "terminal",
+                "gps_code": "EDDH",
+                "iata_code": "HAM",
+                "wikipedia": "http://en.wikipedia.org/wiki/Hamburg_Airport",
+                "natlscale": 75,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    10.005647830925001,
+                    53.63200116408658
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 3,
+                "type": "major",
+                "name": "Mccarran Int'l",
+                "abbrev": "LAS",
+                "location": "terminal",
+                "gps_code": "KLAS",
+                "iata_code": "LAS",
+                "wikipedia": "http://en.wikipedia.org/wiki/McCarran_International_Airport",
+                "natlscale": 75,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.15132395128332,
+                    36.08496023833674
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 3,
+                "type": "major",
+                "name": "Orlando Int'l",
+                "abbrev": "MCO",
+                "location": "terminal",
+                "gps_code": "KMCO",
+                "iata_code": "MCO",
+                "wikipedia": "http://en.wikipedia.org/wiki/Orlando_International_Airport",
+                "natlscale": 75,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.30737133079849,
+                    28.431150679113763
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 3,
+                "type": "major",
+                "name": "Minneapolis St. Paul Int'l",
+                "abbrev": "MSP",
+                "location": "terminal",
+                "gps_code": "KMSP",
+                "iata_code": "MSP",
+                "wikipedia": "http://en.wikipedia.org/wiki/Minneapolis-Saint_Paul_International_Airport",
+                "natlscale": 75,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -93.20810037183008,
+                    44.882026363196815
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 3,
+                "type": "major",
+                "name": "Philadelphia Int'l",
+                "abbrev": "PHL",
+                "location": "terminal",
+                "gps_code": "KPHL",
+                "iata_code": "PHL",
+                "wikipedia": "http://en.wikipedia.org/wiki/Philadelphia_International_Airport",
+                "natlscale": 75,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.2429857676998,
+                    39.876087236427
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 3,
+                "type": "major",
+                "name": "Sky Harbor Int'l",
+                "abbrev": "PHX",
+                "location": "terminal",
+                "gps_code": "KPHX",
+                "iata_code": "PHX",
+                "wikipedia": "http://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
+                "natlscale": 75,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -112.01363529772982,
+                    33.43586076394977
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 3,
+                "type": "major",
+                "name": "Salt Lake City Int'l",
+                "abbrev": "SLC",
+                "location": "terminal",
+                "gps_code": "KSLC",
+                "iata_code": "SLC",
+                "wikipedia": "http://en.wikipedia.org/wiki/Salt_Lake_City_International_Airport",
+                "natlscale": 75,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -111.98198487999271,
+                    40.786729005370844
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 3,
+                "type": "major",
+                "name": "Lambert St Louis Int'l",
+                "abbrev": "STL",
+                "location": "terminal",
+                "gps_code": "KSTL",
+                "iata_code": "STL",
+                "wikipedia": "http://en.wikipedia.org/wiki/Lambert-St._Louis_International_Airport",
+                "natlscale": 75,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -90.36595453506747,
+                    38.742716315520354
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 3,
+                "type": "major",
+                "name": "Okecie Int'l",
+                "abbrev": "WAW",
+                "location": "terminal",
+                "gps_code": "EPWA",
+                "iata_code": "WAW",
+                "wikipedia": "http://en.wikipedia.org/wiki/Warsaw_Frederic_Chopin_Airport",
+                "natlscale": 75,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    20.97272633835865,
+                    52.171026749259035
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 2,
+                "type": "major",
+                "name": "Hartsfield-Jackson Atlanta Int'l",
+                "abbrev": "ATL",
+                "location": "terminal",
+                "gps_code": "KATL",
+                "iata_code": "ATL",
+                "wikipedia": "http://en.wikipedia.org/wiki/Hartsfield-Jackson_Atlanta_International_Airport",
+                "natlscale": 150,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.42539743360473,
+                    33.64052908073521
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 2,
+                "type": "major",
+                "name": "Gen E L Logan Int'l",
+                "abbrev": "BOS",
+                "location": "terminal",
+                "gps_code": "KBOS",
+                "iata_code": "BOS",
+                "wikipedia": "http://en.wikipedia.org/wiki/Logan_International_Airport",
+                "natlscale": 150,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -71.01640661729584,
+                    42.366565819850564
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 2,
+                "type": "major",
+                "name": "Baltimore-Washington Int'l Thurgood Marshall",
+                "abbrev": "BWI",
+                "location": "terminal",
+                "gps_code": "KBWI",
+                "iata_code": "BWI",
+                "wikipedia": "http://en.wikipedia.org/wiki/Baltimore-Washington_International_Thurgood_Marshall_Airport",
+                "natlscale": 150,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.66864283524481,
+                    39.17939435835678
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 2,
+                "type": "major",
+                "name": "Denver Int'l",
+                "abbrev": "DEN",
+                "location": "terminal",
+                "gps_code": "KDEN",
+                "iata_code": "DEN",
+                "wikipedia": "http://en.wikipedia.org/wiki/Denver_International_Airport",
+                "natlscale": 150,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -104.67379733854197,
+                    39.84946138815095
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 2,
+                "type": "major",
+                "name": "Dallas-Ft. Worth Int'l",
+                "abbrev": "DFW",
+                "location": "parking",
+                "gps_code": "KDFW",
+                "iata_code": "DFW",
+                "wikipedia": "http://en.wikipedia.org/wiki/Dallas-Fort_Worth_International_Airport",
+                "natlscale": 150,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -97.04037107411442,
+                    32.90015055948155
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 2,
+                "type": "major",
+                "name": "Newark Int'l",
+                "abbrev": "EWR",
+                "location": "terminal",
+                "gps_code": "KEWR",
+                "iata_code": "EWR",
+                "wikipedia": "http://en.wikipedia.org/wiki/Newark_Liberty_International_Airport",
+                "natlscale": 150,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.1771472796706,
+                    40.69047982789292
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 2,
+                "type": "major",
+                "name": "Fort Lauderdale Hollywood Int'l",
+                "abbrev": "FLL",
+                "location": "terminal",
+                "gps_code": "KFLL",
+                "iata_code": "FLL",
+                "wikipedia": "http://en.wikipedia.org/wiki/Fort_Lauderdale-Hollywood_International_Airport",
+                "natlscale": 150,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.14525884651891,
+                    26.07170957468273
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 2,
+                "type": "major",
+                "name": "George Bush Intercontinental",
+                "abbrev": "IAH",
+                "location": "terminal",
+                "gps_code": "KIAH",
+                "iata_code": "IAH",
+                "wikipedia": "http://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
+                "natlscale": 150,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -95.33370479129466,
+                    29.9865909034907
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 2,
+                "type": "major",
+                "name": "Los Angeles Int'l",
+                "abbrev": "LAX",
+                "location": "terminal",
+                "gps_code": "KLAX",
+                "iata_code": "LAX",
+                "wikipedia": "http://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
+                "natlscale": 150,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.40246854852198,
+                    33.94417425435857
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 2,
+                "type": "major",
+                "name": "Chicago O'Hare Int'l",
+                "abbrev": "ORD",
+                "location": "terminal",
+                "gps_code": "KORD",
+                "iata_code": "ORD",
+                "wikipedia": "http://en.wikipedia.org/wiki/O'Hare_International_Airport",
+                "natlscale": 150,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.90513439065003,
+                    41.97652910238031
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 2,
+                "type": "major",
+                "name": "Tacoma Int'l",
+                "abbrev": "SEA",
+                "location": "terminal",
+                "gps_code": "KSEA",
+                "iata_code": "SEA",
+                "wikipedia": "http://en.wikipedia.org/wiki/Seattle-Tacoma_International_Airport",
+                "natlscale": 150,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.30228972292387,
+                    47.44358191272591
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 2,
+                "type": "major",
+                "name": "San Francisco Int'l",
+                "abbrev": "SFO",
+                "location": "terminal",
+                "gps_code": "KSFO",
+                "iata_code": "SFO",
+                "wikipedia": "http://en.wikipedia.org/wiki/San_Francisco_International_Airport",
+                "natlscale": 150,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.38347034444935,
+                    37.61702508680535
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "scalerank": 2,
+                "type": "major",
+                "name": "Toronto-Pearson Int'l",
+                "abbrev": "YYZ",
+                "location": "terminal",
+                "gps_code": "CYYZ",
+                "iata_code": "YYZ",
+                "wikipedia": "http://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+                "natlscale": 150,
+                "featureclass": "Airport"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.61141932474486,
+                    43.68095951863564
+                ]
+            }
+        }
+    ]
+}

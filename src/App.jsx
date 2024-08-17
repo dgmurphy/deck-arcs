@@ -10,8 +10,8 @@ function App() {
   const NODE_SCALE_MIN = 1000
   const [nodeScale, setNodeScale] = useState((NODE_SCALE_MAX + NODE_SCALE_MIN)/2.0);
 
-  const AIR_PORTS =
-    '/ne_10m_airports.geojson';
+  const NODES =
+    '/nodes.geojson';
 
   const INITIAL_VIEW_STATE = {
     longitude: -100,
@@ -26,15 +26,25 @@ function App() {
   const MAPSTYLE = "earth-data-viz" // natural-earth-extended
   const TILESERVER_URL = TILEHOST + "/styles/" + MAPSTYLE + "/{z}/{x}/{y}.png"
 
+  const RUGGEDIZED_COLOR = [50, 180, 50, 180]
+  const STANDARD_COLOR = [90, 90, 255, 180]
+
   const onClick = info => {
     if (info.object) {
       // eslint-disable-next-line
-      alert(`${info.object.properties.name} (${info.object.properties.abbrev})`);
+      alert(`${info.object.properties.name} Ruggedized: ${info.object.properties.ruggedized}`);
     }
   };
 
   function handleUpdateNodeScale(value) {
     setNodeScale(value);
+  }
+
+  function nodeColor(ruggedized) {
+    if (ruggedized) 
+      return RUGGEDIZED_COLOR
+    else
+      return STANDARD_COLOR
   }
 
   return (
@@ -66,21 +76,21 @@ function App() {
           }
         />
         <GeoJsonLayer
-          id="airports"
-          data={AIR_PORTS}
+          id="nodes"
+          data={NODES}
           filled={true}
           pointRadiusMinPixels={2}
           pointRadiusScale={nodeScale}
-          getPointRadius={f => 11 - f.properties.scalerank}
-          getFillColor={[100, 90, 180, 180]}
+          getPointRadius={f => 11 - f.properties.score}
+          getFillColor={f => nodeColor(f.properties.ruggedized)}
           pickable={true}
           autoHighlight={true}
           onClick={onClick}
         />
         <ArcLayer
           id="arcs"
-          data={AIR_PORTS}
-          dataTransform={d => d.features.filter(f => f.properties.scalerank < 4)}
+          data={NODES}
+          dataTransform={d => d.features}
           getSourcePosition={f => [-0.4531566, 51.4709959]}
           getTargetPosition={f => f.geometry.coordinates}
           getSourceColor={[0, 128, 200]}
