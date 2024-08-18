@@ -2,7 +2,6 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
 }
 
 #control-panel {
@@ -16,29 +15,91 @@
   	height: 100%;
   	width: 330px;
   	background: rgba(245, 248, 250, 0.85);
+	:focus {outline:0 !important;}
 }
-
 
 .hrule {
 	width: 90%;
     margin: 0 auto 0 auto;
 }
 
-.layer-controls {
-	padding: 8px 0;
+.controls {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.apptitle {
+	margin-top: 10px;
+	font-size: large;
+	font-weight: bold;
+	text-align: center;
+}
+
+.mapselect {
+	margin: 10px 0 0 20px;
+	font-size: small;
+	text-align: left;
+}
+
+.nodeScaleLabel {
+	background-repeat: no-repeat; 
+	background-image: url("nodescale.png");
+	height: 24px;
+	width: 32px;
+	display: inline-block;
+	margin-right: 8px;
+	margin-left: 0px;
+	vertical-align: middle;
+
 }
 
 .slider-control {
+	width:220px;
+	display: inline-block;
+	vertical-align: middle;
+  }
+
+.sliders {
+	width: fit-content;
+	margin: 16px auto;
+}
+
+.pickinfo {
+	margin-left: 16px;
+	margin-top: 10px;
+}
+
+.pickinfo p {
+	margin-bottom: 5px;
+}
+
+.proplabel {
+	color: grey;
+	margin-right: 5px;
+	margin-left: 12px;
 	
-  height: 220px;
-  margin: 0 auto 0 auto;
-  width:275px;
-  padding-top: 10px;
+}
+  
+.entityprops {
+	margin-bottom: 4px;
 }
 
-.sliders-row {
-	margin-left:20px;
+.pickdot {
+	display: inline-block;
+	background: rgb(133, 136, 160);
+	border-radius: 50%;
+	margin: 10px;
+	height: 12px;
+	width: 12px;
+	vertical-align: middle;
 }
 
+.eprops {
+	display: inline-block;
+	width:fit-content;
+	text-decoration: none;
+	color: rgb(82, 79, 79);
+}
 
-
+.proplist {
+	margin-left: 8px;
+}

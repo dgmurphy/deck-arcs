@@ -1,8 +1,9 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import DeckGL, {GeoJsonLayer, ArcLayer, TileLayer, BitmapLayer} from 'deck.gl'
 import './App.css'
 import LayerControls from './components/layer-controls'
-import AppInit from './components/app-init'
+import MapSelect from './components/mapselect'
+import PickInfo from './components/pickinfo'
 import APP_C from './components/constants'
 
 function App() {
@@ -10,25 +11,55 @@ function App() {
   // APP STATE
   const [nodeScale, setNodeScale] = useState((APP_C.NODE_SCALE_MAX + APP_C.NODE_SCALE_MIN)/2.0);
   const [arcColorMode, setArcColorMode] = useState(APP_C.ARC_COLOR_BY_WAVEBAND)
-  const [tileHost, setTileHost] = useState("NOT SET")
+  const [tileHost, setTileHost] = useState("http://localhost:8080")
   const [mapStyle, setMapStyle] = useState("earth-data-viz")
+  const [pickInfo, setPickInfo] = useState({})
 
-  const TILESERVER_URL = tileHost + "/styles/" + mapStyle + "/{z}/{x}/{y}.png"
 
-  const onClick = info => {
-    if (info.object) {
-      // eslint-disable-next-line
-      alert(`${info.object.properties.name} Ruggedized: ${info.object.properties.ruggedized}`);
+  // Load map server config
+  useEffect(() => {
+    let ignore = false;
+    fetch('mapserver.json')
+      .then(response => response.json())
+      .then(json => {
+        if (!ignore) {
+          setTileHost(json["mapserver_url"])
+        }
+      });
+    return () => {
+      ignore = true;
+    };
+  });  
+
+
+  function onClick(info) {
+    setPickInfo({
+      name: info.object.properties.name
+    })
+
+    const pickerXform = [
+      { transform: "scale(2)", backgroundColor: "purple" },
+      { transform: "scale(0.9)", backgroundColor: "aqua" },
+      { transform: "scale(1)", backgroundColor: "grey" },
+    ];
+  
+    const pickerTiming = {
+      duration: 300,
+      iterations: 1,
+    };
+  
+    const picker = document.getElementById("pulse")
+    if (picker) {
+      picker.animate(pickerXform, pickerTiming)
     }
-  };
-
-  function handleServerSelect(value) {
-    setTileHost = value;
+  
   }
+
 
   function handleUpdateNodeScale(value) {
     setNodeScale(value);
   }
+
 
   function nodeColor(ruggedized) {
     if (ruggedized) 
@@ -36,6 +67,7 @@ function App() {
     else
       return APP_C.STANDARD_COLOR
   }
+
 
   function brighter(color) {
     let newColor = []
@@ -49,6 +81,7 @@ function App() {
     return newColor
   }
 
+
   function arcColor(network, waveband, whichEnd) {
     let color = [100, 100, 100, 100]
     if (arcColorMode == APP_C.ARC_COLOR_BY_WAVEBAND)
@@ -61,6 +94,7 @@ function App() {
     else
       return color
   }
+
 
   function arcWidth(numPaths) {
     const MAXWIDTH = 10
@@ -77,23 +111,31 @@ function App() {
 
   }
 
-  if (tileHost == "NOT SET") {
-    return <AppInit handleUpdate={handleServerSelect}/>
-  }
 
+  function handleUpdateMapStyle(mstyle) {
+    setMapStyle(mstyle)
+  }
+ 
   return (
       <div>
-        <div id="control-panel">
-          <h2>Control Panel</h2>
+        <div className="controls" id="control-panel">
+          <p className="apptitle">NIE Geo</p>
+          <hr className="hrule" />
+          <MapSelect 
+            mapserver={tileHost}
+            handleUpdate={handleUpdateMapStyle}
+          />
           <LayerControls
             nodeScale={nodeScale}
             handleUpdate={handleUpdateNodeScale}
           />
+          <hr className="hrule" />
+          <PickInfo entityInfo={pickInfo} />
         </div>
         <DeckGL controller={true} initialViewState={APP_C.INITIAL_VIEW_STATE}>
           <TileLayer
             id="base-map"
-            data={TILESERVER_URL}
+            data={tileHost + "/styles/" + mapStyle + "/{z}/{x}/{y}.png"}
             maxZoom={19}
             minZoom={0}
             pickable= {true}
