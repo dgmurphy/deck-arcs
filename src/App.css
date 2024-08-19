@@ -117,6 +117,10 @@
 
 }
 
+.sliderAndLabel {
+	margin-bottom: 6px;
+}
+
 .slider-control {
 	width:220px;
 	display: inline-block;
@@ -125,7 +129,7 @@
 
 .sliders {
 	width: fit-content;
-	margin: 16px auto;
+	margin: 24px auto;
 }
 
 .pickinfo {

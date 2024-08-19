@@ -1,7 +1,7 @@
 const APP_C = {
     ARC_COLOR_BY_WAVEBAND: "arc_color_by_waveband",
     ARC_COLOR_BY_NETWORK: "arc_color_by_network",
-    NODE_SCALE_MAX: 10000,
+    NODE_SCALE_MAX: 20000,
     NODE_SCALE_MIN: 1000,
     NETWORKS: { 
         "AlphaNet": [200,90,80,255], 
@@ -32,7 +32,8 @@ const APP_C = {
         "http://localhost:8080", 
         "https://wb-mindockweb.usgovvirginia.cloudapp.usgovcloudapi.net:20443"
     ],
-    MAPSTYLE_DEFAULTS: ["earth-data-viz", "natural-earth-extended"]
+    MAPSTYLE_DEFAULTS: ["earth-data-viz", "natural-earth-extended"],
+    ARC_WIDTH_MAX: 10
     
 }
 

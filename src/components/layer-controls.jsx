@@ -1,10 +1,12 @@
 
-import { Slider } from "@blueprintjs/core"
+import { Slider, RangeSlider } from "@blueprintjs/core"
+import APP_C from "./constants";
  
 export default function LayerControls({nodeScale, handleUpdateNodeScale, 
   stdArcOpacity, handleUpdateStdArcOpacity,
   ruggedArcOpacity, handleUpdateRuggedArcOpacity,
-  arcWidthScale, handleUpdateArcScale}) {
+  arcWidthScale, handleUpdateArcScale,
+  arcFilterRange, handleUpdateArcRange}) {
     return (
 
       <div className="sliders">
@@ -12,8 +14,8 @@ export default function LayerControls({nodeScale, handleUpdateNodeScale,
           <div className="nodeScaleLabel" title="node scale"></div>
           <div className="slider-control">
             <Slider
-              min={1000}
-              max={20000}
+              min={APP_C.NODE_SCALE_MIN}
+              max={APP_C.NODE_SCALE_MAX}
               value={nodeScale}
               onChange={handleUpdateNodeScale}
               stepSize={500}
@@ -71,11 +73,11 @@ export default function LayerControls({nodeScale, handleUpdateNodeScale,
         <div className="sliderAndLabel">
           <div className="arcFilterLabel" title="arc filter"></div>
           <div className="slider-control">
-            <Slider
-              min={0.01}
-              max={1}
-              value={arcWidthScale}
-              onChange={<></>}
+            <RangeSlider
+              min={0}
+              max={10}
+              value={arcFilterRange}
+              onChange={handleUpdateArcRange}
               stepSize={.01}
               labelRenderer={false}
               vertical={false}

@@ -13,11 +13,12 @@ function App() {
   const [nodeScale, setNodeScale] = useState((APP_C.NODE_SCALE_MAX + APP_C.NODE_SCALE_MIN)/2.0);
   const [stdArcOpacity, setStdArcOpacity] = useState(50)
   const [ruggedArcOpacity, setRuggedArcOpacity] = useState(50)
-  const [arcWidthScale, setArcWidthScale] = useState(0.5)
+  const [arcWidthScale, setArcWidthScale] = useState(0.2)
   const [arcColorMode, setArcColorMode] = useState(APP_C.ARC_COLOR_BY_WAVEBAND)
   const [tileHost, setTileHost] = useState("http://localhost:8080")
   const [mapStyle, setMapStyle] = useState("earth-data-viz")
   const [pickInfo, setPickInfo] = useState({"init": true})
+  const [arcFilterRange, setArcFilterRange] = useState([0, 10])
 
 
   // Load map server config
@@ -65,21 +66,24 @@ function App() {
   
   }
 
+  function handleUpdateArcRange(value) {
+    setArcFilterRange(value)
+  }
 
   function handleUpdateNodeScale(value) {
-    setNodeScale(value);
+    setNodeScale(value)
   }
 
   function handleUpdateArcScale(value) {
-    setArcWidthScale(value);
+    setArcWidthScale(value)
   }
 
   function handleUpdateStdArcOpacity(value) {
-    setStdArcOpacity(value);
+    setStdArcOpacity(value)
   }
 
   function handleUpdateRuggedArcOpacity(value) {
-    setRuggedArcOpacity(value);
+    setRuggedArcOpacity(value)
   }
 
   function nodeColor(ruggedized) {
@@ -90,49 +94,61 @@ function App() {
   }
 
 
-  function brighter(color, opacity) {
-    let newColor = []
-    color.forEach((c) => {
-      let newC = c + (.5 * c)
-      if (newC > 255)
-        newC = 255
-      newColor.push(newC)
-    });
+  function brighter(color) {
+    
+    let newc = [0,0,0,color[3]]
 
-    newColor[3] = opacity
-    return newColor
+    for (let i = 0; i < 3; i++) {
+      newc[i] = color[i] + 150
+      if (newc[i] > 255)
+        newc[i] = 255
+    }
+    return newc
   }
 
+  
+  function arcColor(type, waveband, numPaths, whichEnd) {
 
-  function arcColor(type, network, waveband, whichEnd) {
-    let color 
-    if (arcColorMode == APP_C.ARC_COLOR_BY_WAVEBAND)
-      color = APP_C.WAVEBANDS[waveband]
-    else
-      color = APP_C.NETWORKS[network]
+    let color = APP_C.WAVEBANDS[waveband]
+    if (!color)
+      color = [0, 0, 0, 255]
 
-    let opacity = stdArcOpacity
-    if (type == "rugged")
-      opacity = ruggedArcOpacity
+ 
+    // if (whichEnd == "source")
+    //   color =  brighter(color)
 
-    color[3] = Math.floor((opacity/100) * 255)
+    // Hide arcs that do not pass the path weight filter
+    let lineWeight = arcWidth(numPaths)
+    let opacity
 
-    if (whichEnd == "target")
-      color =  brighter(color, opacity)
+    if ((lineWeight < arcFilterRange[0]) || (lineWeight > arcFilterRange[1])) {
+           opacity = 0
+    } else {
+         if (type == "std")
+           opacity = stdArcOpacity
+         else
+           opacity = ruggedArcOpacity
+    }    
+    
+    // set 0-255 value
+    if (opacity > 0) {
+      opacity = Math.floor(opacity/100 * 255)
+    }
+
+    color[3] = opacity
 
     return color
+    
   }
 
 
   function arcWidth(numPaths) {
-    const MAXWIDTH = 10
-    const MINWIDTH = 1
 
     let width = numPaths
 
-    if (width < MINWIDTH)
+    if (width < 1)
       return 1
-    else if (width > MAXWIDTH)
+    else if (width > APP_C.ARC_WIDTH_MAX)
       return MAXWIDTH
     else
       return width
@@ -144,7 +160,7 @@ function App() {
     setMapStyle(mstyle)
   }
 
- 
+
   return (
       <div>
         <div className="controls" id="control-panel">
@@ -159,6 +175,8 @@ function App() {
             handleUpdateRuggedArcOpacity={handleUpdateRuggedArcOpacity}
             arcWidthScale={arcWidthScale}
             handleUpdateArcScale={handleUpdateArcScale}
+            arcFilterRange={arcFilterRange}
+            handleUpdateArcRange={handleUpdateArcRange}
           />
           <MapSelect 
             mapserver={tileHost}
@@ -171,6 +189,7 @@ function App() {
           controller={true} 
           initialViewState={APP_C.INITIAL_VIEW_STATE}
           getCursor={() => "crosshair"}
+          useDevicePixels={false}
           >
           <TileLayer
             id="base-map"
@@ -205,30 +224,34 @@ function App() {
 
           <ArcLayer
             id="arcs-rugged"
+            parameters={{depthTest: false}}
             data={APP_C.ARCS}
             dataTransform={d => d.features.filter(f => f.ruggedPath == 1)}
             getSourcePosition={f => f.sourcePosition}
             getTargetPosition={f => f.targetPosition}
-            getSourceColor={f => arcColor("rugged", f.network, f.waveband, "source")}
-            getTargetColor={f => arcColor("rugged", f.network, f.waveband, "target")}
+            getSourceColor={f => arcColor("rugged", f.waveband, f.numPaths, "source")}
+            getTargetColor={f => arcColor("rugged", f.waveband, f.numPaths, "target")}
             getWidth={f => arcWidth(f.numPaths)}
-            visible={ruggedArcOpacity > 1 ? true : false}
+            visible={ruggedArcOpacity > .1 ? true : false}
             widthScale={arcWidthScale}
-            updateTriggers={{getSourceColor:[ruggedArcOpacity]}}
+            updateTriggers={{getSourceColor:[ruggedArcOpacity, arcFilterRange],
+                             getTargetColor:[ruggedArcOpacity, arcFilterRange]}}
           />
 
           <ArcLayer
             id="arcs-standard"
+            parameters={{depthTest: false}}
             data={APP_C.ARCS}
             dataTransform={d => d.features.filter(f => f.ruggedPath == 0)}
             getSourcePosition={f => f.sourcePosition}
             getTargetPosition={f => f.targetPosition}
-            getSourceColor={f => arcColor("std", f.network, f.waveband, "source")}
-            getTargetColor={f => arcColor("std", f.network, f.waveband, "target")}
+            getSourceColor={f => arcColor("std", f.waveband, f.numPaths, "source")}
+            getTargetColor={f => arcColor("std", f.waveband, f.numPaths, "target")}
             getWidth={f => arcWidth(f.numPaths)}
-            visible={stdArcOpacity > 1 ? true : false}
+            visible={stdArcOpacity > .1 ? true : false}
             widthScale={arcWidthScale}
-            updateTriggers={{getSourceColor:[stdArcOpacity]}}
+            updateTriggers={{getSourceColor:[stdArcOpacity, arcFilterRange],
+                             getTargetColor:[stdArcOpacity, arcFilterRange]}}
           />
 
         </DeckGL>
