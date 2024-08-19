@@ -27,15 +27,32 @@
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+.appicon {
+	margin-left: 12px;
+	margin-top: 8px;
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.appheader {
+	width:fit-content;
+	margin: auto;
+}
+
 .apptitle {
 	margin-top: 10px;
 	font-size: 18pt;
 	font-weight: bold;
 	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+	
 }
 
 .mapselect {
-	margin: 10px 0 0 20px;
+	margin: 10px 0 20px 20px;
 	font-size: small;
 	text-align: left;
 }
@@ -79,6 +96,18 @@
 .arcWidthLabel {
 	background-repeat: no-repeat; 
 	background-image: url("arcwidth.png");
+	height: 24px;
+	width: 32px;
+	display: inline-block;
+	margin-right: 12px;
+	margin-left: 0px;
+	vertical-align: middle;
+
+}
+
+.arcFilterLabel {
+	background-repeat: no-repeat; 
+	background-image: url("arcfilter.png");
 	height: 24px;
 	width: 32px;
 	display: inline-block;
@@ -142,4 +171,8 @@
 
 .latlong {
 	font-size: 9pt;
+}
+
+.dropdown {
+	margin-bottom: 6px;
 }

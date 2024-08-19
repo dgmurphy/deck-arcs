@@ -23,8 +23,6 @@ export default function PickInfo(entityInfo) {
   let lat = einfo.coordinates[0].toFixed(6)
   let lon = einfo.coordinates[1].toFixed(6)
 
-  console.log(einfo)
-
   return (
 
     <div className="pickinfo">

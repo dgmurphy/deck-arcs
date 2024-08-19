@@ -4,6 +4,7 @@ import './App.css'
 import LayerControls from './components/layer-controls'
 import MapSelect from './components/mapselect'
 import PickInfo from './components/pickinfo'
+import AppHeader from './components/appheader'
 import APP_C from './components/constants'
 
 function App() {
@@ -99,7 +100,6 @@ function App() {
     });
 
     newColor[3] = opacity
-    console.log(newColor)
     return newColor
   }
 
@@ -148,12 +148,8 @@ function App() {
   return (
       <div>
         <div className="controls" id="control-panel">
-          <p className="apptitle">NIE Geo</p>
+          <AppHeader/>
           <hr className="hrule" />
-          <MapSelect 
-            mapserver={tileHost}
-            handleUpdate={handleUpdateMapStyle}
-          />
           <LayerControls
             nodeScale={nodeScale}
             handleUpdateNodeScale={handleUpdateNodeScale}
@@ -163,6 +159,10 @@ function App() {
             handleUpdateRuggedArcOpacity={handleUpdateRuggedArcOpacity}
             arcWidthScale={arcWidthScale}
             handleUpdateArcScale={handleUpdateArcScale}
+          />
+          <MapSelect 
+            mapserver={tileHost}
+            handleUpdate={handleUpdateMapStyle}
           />
           <hr className="hrule" />
           <PickInfo entityInfo={pickInfo} />

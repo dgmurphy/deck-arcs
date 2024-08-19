@@ -24,7 +24,7 @@ export default function LayerControls({nodeScale, handleUpdateNodeScale,
         </div>
 
         <div className="sliderAndLabel">
-          <div className="standardArcOpacityLabel" title="arc scale"></div>
+          <div className="standardArcOpacityLabel" title="arc opacity"></div>
           <div className="slider-control">
             <Slider
               min={0}
@@ -39,7 +39,7 @@ export default function LayerControls({nodeScale, handleUpdateNodeScale,
         </div>
 
         <div className="sliderAndLabel">
-          <div className="ruggedArcOpacityLabel" title="rugged arc scale"></div>
+          <div className="ruggedArcOpacityLabel" title="rugged arc opacity"></div>
           <div className="slider-control">
             <Slider
               min={0}
@@ -61,6 +61,21 @@ export default function LayerControls({nodeScale, handleUpdateNodeScale,
               max={1}
               value={arcWidthScale}
               onChange={handleUpdateArcScale}
+              stepSize={.01}
+              labelRenderer={false}
+              vertical={false}
+            />
+          </div>
+        </div>
+
+        <div className="sliderAndLabel">
+          <div className="arcFilterLabel" title="arc filter"></div>
+          <div className="slider-control">
+            <Slider
+              min={0.01}
+              max={1}
+              value={arcWidthScale}
+              onChange={<></>}
               stepSize={.01}
               labelRenderer={false}
               vertical={false}
