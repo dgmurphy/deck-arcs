@@ -29,7 +29,7 @@
 
 .apptitle {
 	margin-top: 10px;
-	font-size: large;
+	font-size: 18pt;
 	font-weight: bold;
 	text-align: center;
 }
@@ -46,7 +46,43 @@
 	height: 24px;
 	width: 32px;
 	display: inline-block;
-	margin-right: 8px;
+	margin-right: 12px;
+	margin-left: 0px;
+	vertical-align: middle;
+
+}
+
+.standardArcOpacityLabel {
+	background-repeat: no-repeat; 
+	background-image: url("stdarcopacity.png");
+	height: 24px;
+	width: 32px;
+	display: inline-block;
+	margin-right: 12px;
+	margin-left: 0px;
+	vertical-align: middle;
+
+}
+
+.ruggedArcOpacityLabel {
+	background-repeat: no-repeat; 
+	background-image: url("ruggedarcopacity.png");
+	height: 24px;
+	width: 32px;
+	display: inline-block;
+	margin-right: 12px;
+	margin-left: 0px;
+	vertical-align: middle;
+
+}
+
+.arcWidthLabel {
+	background-repeat: no-repeat; 
+	background-image: url("arcwidth.png");
+	height: 24px;
+	width: 32px;
+	display: inline-block;
+	margin-right: 12px;
 	margin-left: 0px;
 	vertical-align: middle;
 
@@ -102,4 +138,8 @@
 
 .proplist {
 	margin-left: 8px;
+}
+
+.latlong {
+	font-size: 9pt;
 }

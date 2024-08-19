@@ -14,7 +14,7 @@ export default function MapSelect({mapserver, handleUpdate}) {
           Map Style: </label>
           <select id="mapstyle" name="mapstyle" defaultValue={"plain"}
                   onChange={handleMapStyle}>
-            <option value="earth-data-viz">Plain</option>
+            <option value="earth-data-viz">Clean</option>
             <option value="natural-earth-extended">Shaded</option>
           </select>
         

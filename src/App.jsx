@@ -10,10 +10,13 @@ function App() {
 
   // APP STATE
   const [nodeScale, setNodeScale] = useState((APP_C.NODE_SCALE_MAX + APP_C.NODE_SCALE_MIN)/2.0);
+  const [stdArcOpacity, setStdArcOpacity] = useState(50)
+  const [ruggedArcOpacity, setRuggedArcOpacity] = useState(50)
+  const [arcWidthScale, setArcWidthScale] = useState(0.5)
   const [arcColorMode, setArcColorMode] = useState(APP_C.ARC_COLOR_BY_WAVEBAND)
   const [tileHost, setTileHost] = useState("http://localhost:8080")
   const [mapStyle, setMapStyle] = useState("earth-data-viz")
-  const [pickInfo, setPickInfo] = useState({})
+  const [pickInfo, setPickInfo] = useState({"init": true})
 
 
   // Load map server config
@@ -33,8 +36,14 @@ function App() {
 
 
   function onClick(info) {
+
     setPickInfo({
-      name: info.object.properties.name
+      init: false,
+      name: info.object.properties.name,
+      coordinates: info.object.geometry.coordinates,
+      ruggedized: info.object.properties.ruggedized,
+      score: info.object.properties.score,
+      url: info.object.properties.url
     })
 
     const pickerXform = [
@@ -60,6 +69,17 @@ function App() {
     setNodeScale(value);
   }
 
+  function handleUpdateArcScale(value) {
+    setArcWidthScale(value);
+  }
+
+  function handleUpdateStdArcOpacity(value) {
+    setStdArcOpacity(value);
+  }
+
+  function handleUpdateRuggedArcOpacity(value) {
+    setRuggedArcOpacity(value);
+  }
 
   function nodeColor(ruggedized) {
     if (ruggedized) 
@@ -69,7 +89,7 @@ function App() {
   }
 
 
-  function brighter(color) {
+  function brighter(color, opacity) {
     let newColor = []
     color.forEach((c) => {
       let newC = c + (.5 * c)
@@ -78,21 +98,29 @@ function App() {
       newColor.push(newC)
     });
 
+    newColor[3] = opacity
+    console.log(newColor)
     return newColor
   }
 
 
-  function arcColor(network, waveband, whichEnd) {
-    let color = [100, 100, 100, 100]
+  function arcColor(type, network, waveband, whichEnd) {
+    let color 
     if (arcColorMode == APP_C.ARC_COLOR_BY_WAVEBAND)
       color = APP_C.WAVEBANDS[waveband]
     else
       color = APP_C.NETWORKS[network]
 
+    let opacity = stdArcOpacity
+    if (type == "rugged")
+      opacity = ruggedArcOpacity
+
+    color[3] = Math.floor((opacity/100) * 255)
+
     if (whichEnd == "target")
-      return brighter(color)
-    else
-      return color
+      color =  brighter(color, opacity)
+
+    return color
   }
 
 
@@ -100,7 +128,7 @@ function App() {
     const MAXWIDTH = 10
     const MINWIDTH = 1
 
-    let width = numPaths/2
+    let width = numPaths
 
     if (width < MINWIDTH)
       return 1
@@ -115,6 +143,7 @@ function App() {
   function handleUpdateMapStyle(mstyle) {
     setMapStyle(mstyle)
   }
+
  
   return (
       <div>
@@ -127,12 +156,22 @@ function App() {
           />
           <LayerControls
             nodeScale={nodeScale}
-            handleUpdate={handleUpdateNodeScale}
+            handleUpdateNodeScale={handleUpdateNodeScale}
+            stdArcOpacity={stdArcOpacity}
+            handleUpdateStdArcOpacity={handleUpdateStdArcOpacity}
+            ruggedArcOpacity={ruggedArcOpacity}
+            handleUpdateRuggedArcOpacity={handleUpdateRuggedArcOpacity}
+            arcWidthScale={arcWidthScale}
+            handleUpdateArcScale={handleUpdateArcScale}
           />
           <hr className="hrule" />
           <PickInfo entityInfo={pickInfo} />
         </div>
-        <DeckGL controller={true} initialViewState={APP_C.INITIAL_VIEW_STATE}>
+        <DeckGL 
+          controller={true} 
+          initialViewState={APP_C.INITIAL_VIEW_STATE}
+          getCursor={() => "crosshair"}
+          >
           <TileLayer
             id="base-map"
             data={tileHost + "/styles/" + mapStyle + "/{z}/{x}/{y}.png"}
@@ -163,26 +202,35 @@ function App() {
             autoHighlight={true}
             onClick={onClick}
           />
-          <ArcLayer
-            id="arcs-standard"
-            data={APP_C.ARCS}
-            dataTransform={d => d.features.filter(f => f.ruggedPath == 0)}
-            getSourcePosition={f => f.sourcePosition}
-            getTargetPosition={f => f.targetPosition}
-            getSourceColor={f => arcColor(f.network, f.waveband, "source")}
-            getTargetColor={f => arcColor(f.network, f.waveband, "target")}
-            getWidth={f => arcWidth(f.numPaths)}
-          />
+
           <ArcLayer
             id="arcs-rugged"
             data={APP_C.ARCS}
             dataTransform={d => d.features.filter(f => f.ruggedPath == 1)}
             getSourcePosition={f => f.sourcePosition}
             getTargetPosition={f => f.targetPosition}
-            getSourceColor={f => arcColor(f.network, f.waveband, "source")}
-            getTargetColor={f => arcColor(f.network, f.waveband, "target")}
+            getSourceColor={f => arcColor("rugged", f.network, f.waveband, "source")}
+            getTargetColor={f => arcColor("rugged", f.network, f.waveband, "target")}
             getWidth={f => arcWidth(f.numPaths)}
+            visible={ruggedArcOpacity > 1 ? true : false}
+            widthScale={arcWidthScale}
+            updateTriggers={{getSourceColor:[ruggedArcOpacity]}}
           />
+
+          <ArcLayer
+            id="arcs-standard"
+            data={APP_C.ARCS}
+            dataTransform={d => d.features.filter(f => f.ruggedPath == 0)}
+            getSourcePosition={f => f.sourcePosition}
+            getTargetPosition={f => f.targetPosition}
+            getSourceColor={f => arcColor("std", f.network, f.waveband, "source")}
+            getTargetColor={f => arcColor("std", f.network, f.waveband, "target")}
+            getWidth={f => arcWidth(f.numPaths)}
+            visible={stdArcOpacity > 1 ? true : false}
+            widthScale={arcWidthScale}
+            updateTriggers={{getSourceColor:[stdArcOpacity]}}
+          />
+
         </DeckGL>
       </div>
     );

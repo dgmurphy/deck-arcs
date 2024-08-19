@@ -4,17 +4,17 @@ const APP_C = {
     NODE_SCALE_MAX: 10000,
     NODE_SCALE_MIN: 1000,
     NETWORKS: { 
-        "AlphaNet": [200,90,80,100], 
-        "BravoNet": [90,200,80,100],
-        "CharlieNet": [90,90,200,100],
-        "DeltaNet": [100,100,80,100],
+        "AlphaNet": [200,90,80,255], 
+        "BravoNet": [90,200,80,255],
+        "CharlieNet": [90,90,200,255],
+        "DeltaNet": [100,100,80,255],
     },
     WAVEBANDS: { 
-        "AHF": [255,183,0,100], 
-        "BHF": [82,173,36,100],
-        "CHF": [41,207,157,100],
-        "DHF": [41,185,207,100],
-        "FHF": [41, 96, 207, 100]
+        "AHF": [255,183,0,255], 
+        "BHF": [82,173,36,255],
+        "CHF": [41,207,157,255],
+        "DHF": [41,185,207,255],
+        "FHF": [41, 96, 207, 255]
     },
     NODES: '/nodes.geojson',
     ARCS: '/arcs.geojson',
