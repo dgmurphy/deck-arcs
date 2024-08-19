@@ -33,7 +33,7 @@ const APP_C = {
         "https://wb-mindockweb.usgovvirginia.cloudapp.usgovcloudapi.net:20443"
     ],
     MAPSTYLE_DEFAULTS: ["earth-data-viz", "natural-earth-extended"],
-    ARC_WIDTH_MAX: 10
+    ARC_WIDTH_MAX: 30
     
 }
 

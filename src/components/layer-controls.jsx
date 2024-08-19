@@ -75,7 +75,7 @@ export default function LayerControls({nodeScale, handleUpdateNodeScale,
           <div className="slider-control">
             <RangeSlider
               min={0}
-              max={10}
+              max={APP_C.ARC_WIDTH_MAX}
               value={arcFilterRange}
               onChange={handleUpdateArcRange}
               stepSize={.01}

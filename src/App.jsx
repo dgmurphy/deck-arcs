@@ -14,7 +14,6 @@ function App() {
   const [stdArcOpacity, setStdArcOpacity] = useState(50)
   const [ruggedArcOpacity, setRuggedArcOpacity] = useState(50)
   const [arcWidthScale, setArcWidthScale] = useState(0.2)
-  const [arcColorMode, setArcColorMode] = useState(APP_C.ARC_COLOR_BY_WAVEBAND)
   const [tileHost, setTileHost] = useState("http://localhost:8080")
   const [mapStyle, setMapStyle] = useState("earth-data-viz")
   const [pickInfo, setPickInfo] = useState({"init": true})
@@ -113,7 +112,6 @@ function App() {
     if (!color)
       color = [0, 0, 0, 255]
 
- 
     // if (whichEnd == "source")
     //   color =  brighter(color)
 
@@ -146,9 +144,7 @@ function App() {
 
     let width = numPaths
 
-    if (width < 1)
-      return 1
-    else if (width > APP_C.ARC_WIDTH_MAX)
+    if (width > APP_C.ARC_WIDTH_MAX)
       return MAXWIDTH
     else
       return width
