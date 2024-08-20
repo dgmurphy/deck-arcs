@@ -98,7 +98,7 @@ function App() {
     let newc = [0,0,0,color[3]]
 
     for (let i = 0; i < 3; i++) {
-      newc[i] = color[i] * 0.2
+      newc[i] = color[i] * 0.5
     }
     return newc
   }

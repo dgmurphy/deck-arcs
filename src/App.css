@@ -59,7 +59,7 @@
 
 .nodeScaleLabel {
 	background-repeat: no-repeat; 
-	background-image: url("nodescale.png");
+	background-image: url("/nodescale.png");
 	height: 24px;
 	width: 32px;
 	display: inline-block;
@@ -71,7 +71,7 @@
 
 .standardArcOpacityLabel {
 	background-repeat: no-repeat; 
-	background-image: url("stdarcopacity.png");
+	background-image: url("/stdarcopacity.png");
 	height: 24px;
 	width: 32px;
 	display: inline-block;
@@ -83,7 +83,7 @@
 
 .ruggedArcOpacityLabel {
 	background-repeat: no-repeat; 
-	background-image: url("ruggedarcopacity.png");
+	background-image: url("/ruggedarcopacity.png");
 	height: 24px;
 	width: 32px;
 	display: inline-block;
@@ -95,7 +95,7 @@
 
 .arcWidthLabel {
 	background-repeat: no-repeat; 
-	background-image: url("arcwidth.png");
+	background-image: url("/arcwidth.png");
 	height: 24px;
 	width: 32px;
 	display: inline-block;
@@ -107,7 +107,7 @@
 
 .arcFilterLabel {
 	background-repeat: no-repeat; 
-	background-image: url("arcfilter.png");
+	background-image: url("/arcfilter.png");
 	height: 24px;
 	width: 32px;
 	display: inline-block;
