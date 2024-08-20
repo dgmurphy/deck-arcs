@@ -4,10 +4,16 @@ import random
 def main():
 
     NODES_FILE = "public/nodes.geojson"
-    RUGGEDIZED_COLOR = [50, 180, 50, 180]
-    STANDARD_COLOR = [90, 90, 255, 180]
     NETWORKS = ["AlphaNet", "BravoNet", "CharlieNet", "DeltaNet"]
     WAVEBANDS = ["AHF", "BHF", "CHF", "DHF", "FHF"]
+
+    WAVEBAND_COLORS = { 
+        "AHF": [255,183,0,255], 
+        "BHF": [82,173,36,255],
+        "CHF": [41,207,157,255],
+        "DHF": [41,185,207,255],
+        "FHF": [41, 96, 207, 255]
+    }
 
     with open(NODES_FILE, 'r') as f:
         input_json = json.load(f)
@@ -37,16 +43,12 @@ def main():
         src_node = nodes[pair_index["src_idx"]]
         dest_node = nodes[pair_index["dest_idx"]]
     
-        src_color = STANDARD_COLOR
-        if src_node["properties"]["ruggedized"]:
-            src_color = RUGGEDIZED_COLOR
-
-        dest_color = STANDARD_COLOR
-        if dest_node["properties"]["ruggedized"]:
-            dest_color = RUGGEDIZED_COLOR
+        waveband = random.choice(WAVEBANDS)
+        src_color = WAVEBAND_COLORS[waveband]
+        dest_color = src_color
         
         rugged_path = 0
-        if src_color == RUGGEDIZED_COLOR and dest_color == RUGGEDIZED_COLOR:
+        if src_node["properties"]["ruggedized"] and dest_node["properties"]["ruggedized"]:
             rugged_path = 1
             
         arc = {
@@ -54,10 +56,10 @@ def main():
             "targetPosition": dest_node["geometry"]["coordinates"],
             "sourceColor": src_color,
             "targetColor": dest_color,
-            "numPaths": random.randint(1, 7),
+            "numPaths": random.randint(1, 29),
             "ruggedPath": rugged_path,
             "network": random.choice(NETWORKS),
-            "waveband": random.choice(WAVEBANDS)
+            "waveband": waveband
         }
         arc_list.append(arc)
 

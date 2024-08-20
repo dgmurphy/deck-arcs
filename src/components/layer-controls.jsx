@@ -78,7 +78,7 @@ export default function LayerControls({nodeScale, handleUpdateNodeScale,
               max={APP_C.ARC_WIDTH_MAX}
               value={arcFilterRange}
               onChange={handleUpdateArcRange}
-              stepSize={.01}
+              stepSize={.5}
               labelRenderer={false}
               vertical={false}
             />

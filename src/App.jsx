@@ -11,13 +11,13 @@ function App() {
 
   // APP STATE
   const [nodeScale, setNodeScale] = useState((APP_C.NODE_SCALE_MAX + APP_C.NODE_SCALE_MIN)/2.0);
-  const [stdArcOpacity, setStdArcOpacity] = useState(50)
-  const [ruggedArcOpacity, setRuggedArcOpacity] = useState(50)
+  const [stdArcOpacity, setStdArcOpacity] = useState(30)
+  const [ruggedArcOpacity, setRuggedArcOpacity] = useState(30)
   const [arcWidthScale, setArcWidthScale] = useState(0.2)
   const [tileHost, setTileHost] = useState("http://localhost:8080")
   const [mapStyle, setMapStyle] = useState("earth-data-viz")
   const [pickInfo, setPickInfo] = useState({"init": true})
-  const [arcFilterRange, setArcFilterRange] = useState([0, 10])
+  const [arcFilterRange, setArcFilterRange] = useState([0, 8])
 
 
   // Load map server config
@@ -93,27 +93,21 @@ function App() {
   }
 
 
-  function brighter(color) {
+  function darker(color) {
     
     let newc = [0,0,0,color[3]]
 
     for (let i = 0; i < 3; i++) {
-      newc[i] = color[i] + 150
-      if (newc[i] > 255)
-        newc[i] = 255
+      newc[i] = color[i] * 0.2
     }
     return newc
   }
 
   
-  function arcColor(type, waveband, numPaths, whichEnd) {
+  function arcColor(type, numPaths, color, whichEnd) {
 
-    let color = APP_C.WAVEBANDS[waveband]
-    if (!color)
-      color = [0, 0, 0, 255]
-
-    // if (whichEnd == "source")
-    //   color =  brighter(color)
+    if (whichEnd == "target")
+      color =  darker(color)
 
     // Hide arcs that do not pass the path weight filter
     let lineWeight = arcWidth(numPaths)
@@ -207,6 +201,7 @@ function App() {
           />
           <GeoJsonLayer
             id="nodes"
+            parameters={{depthTest: false}}
             data={APP_C.NODES}
             filled={true}
             pointRadiusMinPixels={2}
@@ -225,8 +220,8 @@ function App() {
             dataTransform={d => d.features.filter(f => f.ruggedPath == 1)}
             getSourcePosition={f => f.sourcePosition}
             getTargetPosition={f => f.targetPosition}
-            getSourceColor={f => arcColor("rugged", f.waveband, f.numPaths, "source")}
-            getTargetColor={f => arcColor("rugged", f.waveband, f.numPaths, "target")}
+            getSourceColor={f => arcColor("rugged", f.numPaths, f.sourceColor, "source")}
+            getTargetColor={f => arcColor("rugged", f.numPaths, f.targetColor, "target")}
             getWidth={f => arcWidth(f.numPaths)}
             visible={ruggedArcOpacity > .1 ? true : false}
             widthScale={arcWidthScale}
@@ -241,8 +236,8 @@ function App() {
             dataTransform={d => d.features.filter(f => f.ruggedPath == 0)}
             getSourcePosition={f => f.sourcePosition}
             getTargetPosition={f => f.targetPosition}
-            getSourceColor={f => arcColor("std", f.waveband, f.numPaths, "source")}
-            getTargetColor={f => arcColor("std", f.waveband, f.numPaths, "target")}
+            getSourceColor={f => arcColor("std", f.numPaths, f.sourceColor, "source")}
+            getTargetColor={f => arcColor("std", f.numPaths, f.targetColor, "target")}
             getWidth={f => arcWidth(f.numPaths)}
             visible={stdArcOpacity > .1 ? true : false}
             widthScale={arcWidthScale}
